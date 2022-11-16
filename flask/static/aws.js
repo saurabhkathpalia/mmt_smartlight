@@ -1,7 +1,7 @@
 // userPool check
-const cognitoLoginUrl='https://momagic-smartlight.auth.us-east-1.amazoncognito.com'
-const clientId='k74i0dg2e38kvishuctjts2em'
-const clientSecret='1s1mijkm29cll7ngod6mql7pl4j70oqh83j97bps5dann90co04'
+const cognitoLoginUrl='https://smartlight.auth.us-west-2.amazoncognito.com'
+const clientId='60oo6lclmuvl7321pmkr3fcl9f'
+const clientSecret='i9gt1ou92d4bgjd8kirn4ggddq20sbcobq4om1ummuvqso69vnv'
 const searchParams = new URL(location).searchParams;
 
 if (searchParams.get("code") !== null) {
@@ -79,9 +79,9 @@ SigV4Utils.getSignedUrl = function (host, region, credentials) {
 };
 
 // Initialize the Amazon Cognito credentials provider
-AWS.config.region = 'us-east-1'; // Region
+AWS.config.region = 'us-west-2'; // Region
 var credentials = new AWS.CognitoIdentityCredentials({
-   IdentityPoolId: 'us-east-1:4968617b-8a07-460d-a780-3bceb489ba84',
+   IdentityPoolId: 'us-west-2:2a93e19f-0da8-4014-80d6-7931ec7166b7',
 });
 
 var client;
@@ -92,7 +92,7 @@ credentials.get(function (err) {
       console.log(err);
       return;
    }
-   var requestUrl = SigV4Utils.getSignedUrl('a2c3ixz6b99jrf-ats.iot.us-east-1.amazonaws.com', 'us-east-1', credentials);
+   var requestUrl = SigV4Utils.getSignedUrl('aa7l37sbfqnix-ats.iot.us-west-2.amazonaws.com', 'us-west-2' credentials);
    initClient(requestUrl);
 });
 

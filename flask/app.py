@@ -8,8 +8,8 @@ import boto3
 
 app = Flask(__name__)
 app.secret_key = 'momagic'
-AWS_LAMBDA_NAME = 'SendCommand2IoTShadow'
-AWS_REGION = 'us-east-1'
+AWS_LAMBDA_NAME = 'smartLight'
+AWS_REGION = 'us-west-2'
 
 def timezone_translator(weekdays:str, time:str, offset:str) -> tuple:
     new_min = int(time[0:2])*60+int(time[2:4])+int(offset)

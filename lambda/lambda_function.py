@@ -4,7 +4,7 @@ import boto3
 def lambda_handler(event, context):
     client = boto3.client(
         'iot-data',
-        region_name='us-east-1',
+        region_name='us-west-2',
         endpoint_url="https://a2c3ixz6b99jrf-ats.iot.us-east-1.amazonaws.com" # Need to be modified for different IoT Core
     )
     

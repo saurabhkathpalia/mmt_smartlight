@@ -12,7 +12,7 @@ except:
   import socket
 
 # Basic settings
-CLIENT_ID = "DemoThing" # Need to be modified for new device
+CLIENT_ID = "SmartLightThing" # Need to be modified for new device
 LED_NUMS = 5 # Need to be modified for led numbers
 AWS_ENDPOINT = b'aa7l37sbfqnix-ats.iot.us-west-2.amazonaws.com' # Need to be modified for different IoT Core
 KEY_FILE = '/certs/private.pem.key'

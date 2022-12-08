@@ -37,7 +37,7 @@ CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 IOTHUB = IoTHubRegistryManager(CONNECTION_STRING)
 IOTJOB = IoTHubJobManager.from_connection_string(CONNECTION_STRING)
 URL = os.getenv("URL")
-HUBNAME = os.getenv("IOTHUB")
+HUBNAME = os.getenv("mmthub")
 
 
 def device_method_job(job_id, device_id, execution_time, method_name, payload,

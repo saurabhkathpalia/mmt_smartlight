@@ -1,6 +1,6 @@
 import os
 
-b2c_tenant = os.getenv("mmt32")
+b2c_tenant = os.getenv("B2C_TENANT")
 signupsignin_user_flow = os.getenv("SIGNUP")
 editprofile_user_flow = os.getenv("EDITPRO")
 

@@ -1,0 +1,9 @@
+Flask==1.0.2
+itsdangerous==0.24
+Jinja2==2.10
+markupsafe==2.0.1
+requests
+pymongo
+azure-messaging-webpubsubservice
+azure-iot-device
+azure-iot-hub

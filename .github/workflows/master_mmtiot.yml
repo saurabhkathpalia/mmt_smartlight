@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'mmtiot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C77319C4AA8E49F58CAF3259CA87327D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_393946EDA7E142C0B5CE8279A083CF06 }}

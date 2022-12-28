@@ -1,7 +1,7 @@
 import os
 
 b2c_tenant = os.getenv("B2C_TENANT")
-signupsignin_user_flow = "B2C_1_SIGNUP"
+signupsignin_user_flow = os.getenv("SIGNUP")
 editprofile_user_flow = os.getenv("EDITPRO")
 
 resetpassword_user_flow = os.getenv("RESETPASS")  # Note: Legacy setting.

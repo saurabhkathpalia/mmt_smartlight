@@ -1,7 +1,7 @@
 import os
 
 b2c_tenant = os.getenv("B2C_TENANT")
-signupsignin_user_flow = "B2C_1_SIGNUP"
+signupsignin_user_flow = os.getenv("SIGNUP")
 editprofile_user_flow = os.getenv("EDITPRO")
 
 resetpassword_user_flow = os.getenv("RESETPASS")  # Note: Legacy setting.
@@ -22,7 +22,7 @@ B2C_RESET_PASSWORD_AUTHORITY = authority_template.format(
 
 REDIRECT_PATH = "/getAToken"
 # This is the API resource endpoint
-ENDPOINT = 'http://localhost:5000'  #
+ENDPOINT = 'https://mmtiot.azurewebsites.net'  #
 SCOPE = [
     os.getenv("TASK_READ"),
     os.getenv("TASK_WRITE")

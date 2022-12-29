@@ -20,7 +20,7 @@ B2C_RESET_PASSWORD_AUTHORITY = authority_template.format(tenant=b2c_tenant, user
 
 REDIRECT_PATH = "/getAToken"
 # This is the API resource endpoint
-ENDPOINT = 'https://mmt32.onmicrosoft.com'  #
+ENDPOINT = 'https://mmt32.onmicrosoft.com/tasks-api'  #
 SCOPE = [
     os.getenv("TASK_READ"),
     os.getenv("TASK_WRITE")
